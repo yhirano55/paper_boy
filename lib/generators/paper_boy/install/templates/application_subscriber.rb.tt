@@ -1,0 +1,2 @@
+class ApplicationSubscriber < PaperBoy::Subscriber::Base
+end
