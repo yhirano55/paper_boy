@@ -1,0 +1,9 @@
+<% module_namespacing do -%>
+class <%= class_name %>Subscriber < ApplicationSubscriber
+  # def action(event)
+  #   payload = event.payload
+  # end
+
+  attach_to :"<%= plural_name %>"
+end
+<% end -%>

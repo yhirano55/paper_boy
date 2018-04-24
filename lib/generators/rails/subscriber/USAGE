@@ -1,0 +1,8 @@
+Description:
+    Generates a subscriber for a controller with the given name.
+
+Example:
+    rails generate subscriber users
+
+    This will create:
+        app/subscribers/users_subscriber.rb

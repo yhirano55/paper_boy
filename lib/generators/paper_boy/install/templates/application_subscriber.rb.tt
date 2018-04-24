@@ -1,0 +1,2 @@
+class ApplicationSubscriber < ActiveSupport::Subscriber
+end

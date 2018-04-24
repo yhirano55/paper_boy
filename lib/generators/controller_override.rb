@@ -1,0 +1,19 @@
+require "rails/generators"
+require "rails/generators/rails/controller/controller_generator"
+require "rails/generators/rails/scaffold_controller/scaffold_controller_generator"
+
+module Rails
+  module Generators
+    class ControllerGenerator
+      hook_for :subscriber, type: :boolean, default: true do |generator|
+        invoke generator, [name.pluralize]
+      end
+    end
+
+    class ScaffoldControllerGenerator
+      hook_for :subscriber, type: :boolean, default: true do |generator|
+        invoke generator, [name.pluralize]
+      end
+    end
+  end
+end
